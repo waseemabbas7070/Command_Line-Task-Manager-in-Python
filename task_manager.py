@@ -11,7 +11,7 @@ def load_tasks():
         with open(FILE_NAME, "r") as file:
             for line in file:
                 task_id,title,status = line.strip().split(" | ")
-                tasks[int(task_id)] = {"tittle" : title, "status" : status}
+                tasks[int(task_id)] = {"title" : title, "status" : status}
     return tasks     
 
 #  Save tasks in file
